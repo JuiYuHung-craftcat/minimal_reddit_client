@@ -8,7 +8,7 @@ import {
 import Root from "../Root/Root";
 import Contents from "../Contents/Contents"
 import About from "../About/About";
-import "../../output.css";
+import "../../style/output.css";
 
 const App = () => {
   const router = createBrowserRouter(createRoutesFromElements(
