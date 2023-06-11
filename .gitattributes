@@ -1,2 +1,2 @@
 ## Ignore Main css attribute
-/src/style/*.css -linguist-detectable
+/src/style/*.css linguist-vendored
