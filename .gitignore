@@ -8,3 +8,6 @@
 
 # misc
 .DS_Store
+
+# TailwindCss
+/src/output.css
