@@ -1,2 +1,2 @@
 ## Ignore Main css attribute
-src/style/* linguist-documentation=false
+/src/style/*.css linguist-documentation=false
