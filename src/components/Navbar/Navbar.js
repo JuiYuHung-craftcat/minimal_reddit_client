@@ -1,12 +1,27 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchTerm } from '../../store/redditSlice';
 
 const Navbar = () => {
 
+  const [searchTermLocal, setSearchTermLocal] = useState('');
+  const searchTerm = useSelector((state) => state.reddit.searchTerm);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const onSearchTermChange = (e) => {
+    setSearchTermLocal(e.target.value);
+  };
+
+  useEffect(() => {
+    setSearchTermLocal(searchTerm);
+  }, [searchTerm]);
 
   const onSearchTermSubmit = (e) => {
     e.preventDefault();
     navigate('/');
+    dispatch(setSearchTerm(searchTermLocal));
   }
 
   return (
@@ -15,7 +30,7 @@ const Navbar = () => {
       <div class="w-80 mt-6">
         <form onSubmit={onSearchTermSubmit}>
           <label for="search" class="text-white text-bold text-2xl text-center">Search:</label>
-          <input type="text" id="search" name="search" class="ml-2" />
+          <input type="text" id="search" name="search" class="ml-2" onChange={onSearchTermChange} />
         </form>
       </div>
       <Link to="/about" class="w-80 mt-6 pr-8 text-white text-bold text-2xl text-right">About</Link>
