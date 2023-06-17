@@ -20,7 +20,7 @@ const Subreddits = () => {
           <li key={subreddit.id}
             class={`text-white hover:bg-slate-500 ${selectedSubreddit === subreddit.url && `bg-english_red`} `}
           >
-            <button class="flex items-center text-sm mt-8 mb-8" type="button" onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}>
+            <button class="flex items-center text-sm mt-8 mb-8 mx-4" type="button" onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}>
               <img src={subreddit.icon_img || `https://api.adorable.io/avatars/25/${subreddit.display_name}`}
                 alt={`${subreddit.display_name}`}
                 class="w-9 h-9 mr-4 rounded-full"
