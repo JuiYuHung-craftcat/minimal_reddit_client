@@ -708,6 +708,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -1106,6 +1110,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:w-80 {
