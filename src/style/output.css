@@ -786,6 +786,18 @@ video {
   width: 10rem;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1122,6 +1134,10 @@ video {
 
   .lg\:w-96 {
     width: 24rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
   }
 
   .lg\:text-2xl {

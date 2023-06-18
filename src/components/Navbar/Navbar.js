@@ -30,7 +30,7 @@ const Navbar = () => {
       <div class="w-80 mt-8 ml-4 lg:mt-6">
         <form onSubmit={onSearchTermSubmit}>
           <label for="search" class="text-white text-bold text-lg lg:text-2xl text-center">Search:</label>
-          <input type="text" id="search" name="search" class="ml-2" onChange={onSearchTermChange} />
+          <input type="text" id="search" name="search" class="ml-2 w-10 lg:w-40" onChange={onSearchTermChange} />
         </form>
       </div>
       <Link to="/about" class="w-40 lg:w-80 mt-8 lg:mt-6 pr-8 text-white text-bold text-lg lg:text-2xl text-right">About</Link>
