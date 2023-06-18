@@ -1128,6 +1128,10 @@ video {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:w-80 {
     width: 20rem;
   }
@@ -1140,6 +1144,10 @@ video {
     width: 10rem;
   }
 
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1148,6 +1156,11 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
