@@ -85,7 +85,7 @@ const Post = (props) => {
 
   return (
     <article class="bg-gray-300 mx-12 my-12 flex" key={post.id} >
-      <div class="text-lg lg:text-2xl mx-4">
+      <div class="text-lg xl:text-2xl mx-4">
         <button class="my-2" type="button" onClick={() => onHandleVote(1)} aria-label="Up vote">
           {renderUpVote()}
         </button>
@@ -96,7 +96,7 @@ const Post = (props) => {
           {renderDownVote()}
         </button>
       </div>
-      <div class="text-lg lg:text-2xl w-full">
+      <div class="text-lg xl:text-2xl w-full">
         <h3 class="my-2">{post.title}</h3>
         <div class="my-2 mr-4">
           <img src={post.url} alt="" />
