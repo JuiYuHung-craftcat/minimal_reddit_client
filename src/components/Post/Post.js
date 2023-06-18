@@ -41,16 +41,6 @@ const Post = (props) => {
     return <TiArrowDownOutline />
   };
 
-  const getVoteType = () => {
-    if (voteValue === 1) {
-      return 'up-vote';
-    }
-    if (voteValue === -1) {
-      return 'down-vote';
-    }
-    return '';
-  };
-
   const renderComments = () => {
     if (post.errorComments) {
       return (
@@ -84,7 +74,7 @@ const Post = (props) => {
   };
 
   return (
-    <article class="bg-gray-300 mx-12 my-12 flex" key={post.id} >
+    <article class="bg-gray-300 mx-4 lg:mx-12 my-4 lg:my-12 flex" key={post.id} >
       <div class="text-sm lg:text-2xl mx-4">
         <button class="my-2" type="button" onClick={() => onHandleVote(1)} aria-label="Up vote">
           {renderUpVote()}
