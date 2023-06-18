@@ -26,14 +26,14 @@ const Navbar = () => {
 
   return (
     <header class="h-20 flex justify-between bg-slate-900">
-      <Link to="/" class="w-40 sm:w-80 mt-8 sm:mt-6 pl-8 text-white text-bold text-lg sm:text-4xl text-left">Reddit<span class="text-blue-600">Minimal</span></Link>
-      <div class="w-80 mt-8 ml-4 sm:mt-6">
+      <Link to="/" class="w-40 md:w-80 mt-8 md:mt-6 pl-8 text-white text-bold text-lg md:text-4xl text-left">Reddit<span class="text-blue-600">Minimal</span></Link>
+      <div class="w-80 mt-8 ml-4 md:mt-6">
         <form onSubmit={onSearchTermSubmit}>
-          <label for="search" class="text-white text-bold text-lg sm:text-2xl text-center">Search:</label>
+          <label for="search" class="text-white text-bold text-lg md:text-2xl text-center">Search:</label>
           <input type="text" id="search" name="search" class="ml-2" onChange={onSearchTermChange} />
         </form>
       </div>
-      <Link to="/about" class="w-40 sm:w-80 mt-8 sm:mt-6 pr-8 text-white text-bold text-lg sm:text-2xl text-right">About</Link>
+      <Link to="/about" class="w-40 md:w-80 mt-8 md:mt-6 pr-8 text-white text-bold text-lg md:text-2xl text-right">About</Link>
     </header>
   )
 }
