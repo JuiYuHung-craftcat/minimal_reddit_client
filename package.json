@@ -1,6 +1,7 @@
 {
   "name": "minimal_reddit_client",
   "version": "1.0.0",
+  "homepage": "https://github.com/JuiYuHung-craftcat/minimal_reddit_client",
   "private": "true",
   "scripts": {
     "start": "react-scripts start",
