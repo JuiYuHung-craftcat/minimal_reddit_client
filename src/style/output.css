@@ -1112,6 +1112,10 @@ video {
     width: 20rem;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1130,6 +1134,10 @@ video {
 
   .xl\:w-80 {
     width: 20rem;
+  }
+
+  .xl\:w-96 {
+    width: 24rem;
   }
 
   .xl\:text-2xl {
