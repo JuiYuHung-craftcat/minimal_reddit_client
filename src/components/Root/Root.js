@@ -1,5 +1,5 @@
-import { Outlet, Link } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
+import { Outlet, Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 const Root = () => {
   return (
     <>
@@ -9,6 +9,6 @@ const Root = () => {
       </div>
     </>
   );
-}
+};
 
 export default Root;
