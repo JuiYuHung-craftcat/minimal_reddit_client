@@ -8,7 +8,7 @@ const Contents = () => {
         <h2 class="pt-8 text-center text-4xl text-white">Posts</h2>
         <Home />
       </div>
-      <aside class="float-right min-h-fit w-52 bg-sky-800 shadow-xl shadow-black lg:w-96">
+      <aside class="float-right min-h-fit w-14 bg-sky-800 shadow-xl shadow-black lg:w-96">
         <Subreddits />
       </aside>
     </div>
