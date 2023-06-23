@@ -17,7 +17,9 @@ const Subreddits = () => {
 
   return (
     <>
-      <h2 class="mt-4 text-center text-2xl text-white">Subreddits</h2>
+      <h2 class="mt-4 text-center text-sm text-white lg:text-2xl">
+        Subreddits
+      </h2>
       <ul>
         {subreddits.map((subreddit) => (
           <li
@@ -27,7 +29,7 @@ const Subreddits = () => {
             } `}
           >
             <button
-              class="mx-2 mb-8 mt-8 flex items-center text-sm lg:mx-4"
+              class="mx-2 mb-8 mt-8 flex items-center text-sm lg:mx-2"
               type="button"
               onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}
             >

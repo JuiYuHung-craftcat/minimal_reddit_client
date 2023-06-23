@@ -968,6 +968,11 @@ video {
     margin-right: 1rem;
   }
 
+  .lg\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .lg\:ml-4 {
     margin-left: 1rem;
   }
