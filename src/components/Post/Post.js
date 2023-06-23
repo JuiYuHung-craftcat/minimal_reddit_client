@@ -95,11 +95,11 @@ const Post = (props) => {
         </button>
       </div>
       <div class="w-full text-xs lg:text-lg">
-        <h3 class="my-2">{post.title}</h3>
-        <div class="my-2 mr-4">
+        <h3 class="my-2 ml-1 lg:ml-0">{post.title}</h3>
+        <div class="my-2 ml-1 mr-4 lg:ml-0">
           <img src={post.url} alt="" />
         </div>
-        <div class="my-2 lg:flex lg:justify-between">
+        <div class="my-2 ml-1 lg:ml-0 lg:flex lg:justify-between">
           <span class="flex">
             <img
               class="mx-1 h-3 w-3 border border-gray-800 lg:mx-2 lg:h-8 lg:w-8"
