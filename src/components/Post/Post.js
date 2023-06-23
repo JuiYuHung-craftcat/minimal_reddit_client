@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
+import { useState } from "react";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import {
   TiArrowUpOutline,
   TiArrowUpThick,
   TiArrowDownOutline,
   TiArrowDownThick,
-  TiMessage
-} from 'react-icons/ti';
-import moment from 'moment';
-import shortenNumber from '../../utils/shortenNumber';
-import Comment from '../Comment/Comment';
+  TiMessage,
+} from "react-icons/ti";
+import moment from "moment";
+import shortenNumber from "../../utils/shortenNumber";
+import Comment from "../Comment/Comment";
 
 const Post = (props) => {
   const [voteValue, setVoteValue] = useState(0);
@@ -36,9 +36,9 @@ const Post = (props) => {
 
   const renderDownVote = () => {
     if (voteValue === -1) {
-      return <TiArrowDownThick />
+      return <TiArrowDownThick />;
     }
-    return <TiArrowDownOutline />
+    return <TiArrowDownOutline />;
   };
 
   const renderComments = () => {
@@ -74,27 +74,35 @@ const Post = (props) => {
   };
 
   return (
-    <article class="bg-gray-300 mx-4 lg:mx-12 my-4 lg:my-12 flex" key={post.id} >
-      <div class="text-sm lg:text-2xl mx-4">
-        <button class="my-2" type="button" onClick={() => onHandleVote(1)} aria-label="Up vote">
+    <article class="mx-4 my-4 flex bg-gray-300 lg:mx-12 lg:my-12" key={post.id}>
+      <div class="mx-4 text-sm lg:text-lg">
+        <button
+          class="my-2"
+          type="button"
+          onClick={() => onHandleVote(1)}
+          aria-label="Up vote"
+        >
           {renderUpVote()}
         </button>
-        <p>
-          {shortenNumber(post.ups, 1)}
-        </p>
-        <button class="my-2" type="button" onClick={() => onHandleVote(-1)} aria-label="Down vote">
+        <p>{shortenNumber(post.ups, 1)}</p>
+        <button
+          class="my-2"
+          type="button"
+          onClick={() => onHandleVote(-1)}
+          aria-label="Down vote"
+        >
           {renderDownVote()}
         </button>
       </div>
-      <div class="text-sm lg:text-2xl w-full">
+      <div class="w-full text-sm lg:text-lg">
         <h3 class="my-2">{post.title}</h3>
         <div class="my-2 mr-4">
           <img src={post.url} alt="" />
         </div>
-        <div class="lg:flex lg:justify-between my-2">
+        <div class="my-2 lg:flex lg:justify-between">
           <span class="flex">
             <img
-              class="w-8 h-8 mx-2 border border-gray-800"
+              class="mx-2 h-8 w-8 border border-gray-800"
               src={`https://api.dicebear.com/6.x/pixel-art/svg?seed=${post.author}`}
               alt={`${post.author} profile`}
             />
@@ -102,7 +110,12 @@ const Post = (props) => {
           </span>
           <span>{moment.unix(post.created_utc).fromNow()}</span>
           <span class="mr-4">
-            <button class="mx-2" type="button" onClick={() => onToggleComments(post.permalink)} aria-label="Show comments" >
+            <button
+              class="mx-2"
+              type="button"
+              onClick={() => onToggleComments(post.permalink)}
+              aria-label="Show comments"
+            >
               <TiMessage />
             </button>
             {shortenNumber(post.num_comments, 1)}
@@ -112,8 +125,6 @@ const Post = (props) => {
       </div>
     </article>
   );
-
 };
 
 export default Post;
-
