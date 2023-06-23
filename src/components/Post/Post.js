@@ -75,7 +75,7 @@ const Post = (props) => {
 
   return (
     <article class="mx-4 my-4 flex bg-gray-300 lg:mx-12 lg:my-12" key={post.id}>
-      <div class="mx-4 text-sm lg:text-lg">
+      <div class="mx-4 text-xs lg:text-lg">
         <button
           class="my-2"
           type="button"
@@ -94,7 +94,7 @@ const Post = (props) => {
           {renderDownVote()}
         </button>
       </div>
-      <div class="w-full text-sm lg:text-lg">
+      <div class="w-full text-xs lg:text-lg">
         <h3 class="my-2">{post.title}</h3>
         <div class="my-2 mr-4">
           <img src={post.url} alt="" />
@@ -102,7 +102,7 @@ const Post = (props) => {
         <div class="my-2 lg:flex lg:justify-between">
           <span class="flex">
             <img
-              class="mx-2 h-8 w-8 border border-gray-800"
+              class="mx-1 h-3 w-3 border border-gray-800 lg:mx-2 lg:h-8 lg:w-8"
               src={`https://api.dicebear.com/6.x/pixel-art/svg?seed=${post.author}`}
               alt={`${post.author} profile`}
             />
