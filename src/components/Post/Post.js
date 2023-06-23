@@ -75,7 +75,7 @@ const Post = (props) => {
 
   return (
     <article class="mx-4 my-4 flex bg-gray-300 lg:mx-12 lg:my-12" key={post.id}>
-      <div class="mx-4 text-xs lg:text-lg">
+      <div class="mx-4 hidden text-lg lg:block">
         <button
           class="my-2"
           type="button"
