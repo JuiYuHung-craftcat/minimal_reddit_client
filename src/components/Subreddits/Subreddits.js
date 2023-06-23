@@ -29,7 +29,7 @@ const Subreddits = () => {
             } `}
           >
             <button
-              class="mx-2 mb-8 mt-8 flex items-center text-xs lg:mx-2"
+              class="mx-0 mb-2 mt-2 flex items-center text-xs lg:mx-2 lg:mx-2 lg:mb-8 lg:mt-8"
               type="button"
               onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}
             >
@@ -39,7 +39,7 @@ const Subreddits = () => {
                   `https://api.adorable.io/avatars/25/${subreddit.display_name}`
                 }
                 alt={`${subreddit.display_name}`}
-                class="mr-0 h-3 w-3 rounded-full lg:mr-2 lg:mr-4 lg:h-9 lg:w-9"
+                class="mr-4 hidden h-9 w-9 rounded-full lg:block"
               />
               {subreddit.display_name}
             </button>
