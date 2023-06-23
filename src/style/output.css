@@ -675,6 +675,10 @@ video {
   height: 0.5rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .min-h-fit {
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
@@ -739,6 +743,10 @@ video {
 
 .w-2 {
   width: 0.5rem;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .items-center {

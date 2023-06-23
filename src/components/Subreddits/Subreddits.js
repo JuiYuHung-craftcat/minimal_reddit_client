@@ -39,7 +39,7 @@ const Subreddits = () => {
                   `https://api.adorable.io/avatars/25/${subreddit.display_name}`
                 }
                 alt={`${subreddit.display_name}`}
-                class="mr-0 h-4 w-4 rounded-full lg:mr-2 lg:mr-4 lg:h-9 lg:w-9"
+                class="mr-0 h-3 w-3 rounded-full lg:mr-2 lg:mr-4 lg:h-9 lg:w-9"
               />
               {subreddit.display_name}
             </button>
